@@ -1,0 +1,320 @@
+/* Enhanced markdown rendering styles */
+.markdown-content {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #374151;
+  max-width: none;
+}
+
+.markdown-content.dark {
+  color: #e5e7eb;
+}
+
+/* Improved text selection */
+.markdown-content ::selection {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.markdown-content.dark ::selection {
+  background-color: #60a5fa;
+  color: #111827;
+}
+
+/* Better focus outlines for accessibility */
+.markdown-content a:focus,
+.markdown-content button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Code block enhancements */
+.markdown-content pre {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.markdown-content code {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* List improvements */
+.markdown-content ul,
+.markdown-content ol {
+  padding-left: 1.75rem;
+}
+
+.markdown-content li {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.markdown-content li p {
+  margin: 0.25rem 0;
+}
+
+/* Nested lists */
+.markdown-content li > ul,
+.markdown-content li > ol {
+  margin: 0.5rem 0;
+}
+
+/* Table improvements */
+.markdown-content table {
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.markdown-content th,
+.markdown-content td {
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Blockquote improvements */
+.markdown-content blockquote {
+  position: relative;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+.markdown-content blockquote::before {
+  content: '"';
+  position: absolute;
+  left: -0.5rem;
+  top: -0.25rem;
+  font-size: 3rem;
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+/* Image improvements */
+.markdown-content img {
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.markdown-content img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Link improvements */
+.markdown-content a {
+  text-decoration-skip-ink: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.markdown-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Heading improvements */
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.markdown-content h1 {
+  font-size: 2.5rem;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.markdown-content h2 {
+  font-size: 2rem;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.markdown-content h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0.75rem 0;
+}
+
+.markdown-content h4 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.markdown-content h5,
+.markdown-content h6 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* First paragraph after heading */
+.markdown-content h1 + p,
+.markdown-content h2 + p,
+.markdown-content h3 + p,
+.markdown-content h4 + p,
+.markdown-content h5 + p,
+.markdown-content h6 + p {
+  margin-top: 0;
+}
+
+/* Paragraph spacing */
+.markdown-content p {
+  margin: 1.25rem 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* First paragraph */
+.markdown-content > p:first-child {
+  margin-top: 0;
+}
+
+/* Last paragraph */
+.markdown-content > *:last-child {
+  margin-bottom: 0;
+}
+
+/* HR improvements */
+.markdown-content hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0.3;
+  margin: 3rem 0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .markdown-content {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .markdown-content h1 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .markdown-content h2 {
+    font-size: 1.75rem;
+    margin: 2rem 0 0.75rem 0;
+  }
+  
+  .markdown-content h3 {
+    font-size: 1.375rem;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  
+  .markdown-content p {
+    text-align: left;
+    hyphens: none;
+  }
+  
+  .markdown-content img {
+    border-radius: 8px;
+  }
+  
+  .markdown-content pre {
+    font-size: 13px;
+    border-radius: 8px;
+  }
+  
+  .markdown-content ul,
+  .markdown-content ol {
+    padding-left: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .markdown-content {
+    color: black !important;
+    background: white !important;
+  }
+  
+  .markdown-content a {
+    color: black !important;
+    text-decoration: underline !important;
+  }
+  
+  .markdown-content img {
+    max-width: 100% !important;
+    box-shadow: none !important;
+  }
+  
+  .markdown-content pre {
+    background: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+}
+
+/* Animation for content loading */
+.markdown-content {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Copy button animation */
+.copy-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.copy-button:hover {
+  transform: scale(1.05);
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+/* Task list styling */
+.markdown-content input[type="checkbox"] {
+  margin-right: 0.75rem;
+  margin-top: 0.125rem;
+  cursor: pointer;
+}
+
+.markdown-content li:has(input[type="checkbox"]) {
+  list-style: none;
+  margin-left: -1.75rem;
+  padding-left: 1.75rem;
+}
+
+/* Highlight improvements */
+.markdown-content mark {
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.markdown-content.dark mark {
+  background-color: #451a03;
+  color: #fbbf24;
+}

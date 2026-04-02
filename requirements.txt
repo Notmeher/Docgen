@@ -1,0 +1,26 @@
+pocketflow>=0.0.1
+pyyaml>=6.0
+requests>=2.28.0
+gitpython>=3.1.0
+google-cloud-aiplatform>=1.25.0
+google-genai>=1.9.0
+python-dotenv>=1.0.0
+pathspec>=0.11.0
+langchain-core>=0.1.0
+pyodbc==5.2.0
+openai==1.109.0
+langchain-openai==0.3.33
+pydantic==2.11.9
+pydantic_core==2.33.2
+langchain==0.3.27
+
+# Web framework dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+streamlit>=1.28.0
+
+# Additional utilities
+python-multipart>=0.0.6
+
+# Diagram rendering (optional)
+streamlit-mermaid>=0.1.0
