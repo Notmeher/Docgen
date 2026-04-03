@@ -343,27 +343,6 @@ output/
 - Verify LLM model availability
 - Reduce `max_abstraction_num` for large codebases
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- Built with [Pocketflow](https://github.com/pocketflow/pocketflow) for workflow orchestration
-- Powered by OpenAI and Google AI models
-- UI components from [Tailwind CSS](https://tailwindcss.com/)
-- Diagrams rendered with [Mermaid](https://mermaid.js.org/)
-
 ## 📧 Contact & Support
 
 - **Repository**: [github.com/Notmeher/Docgen](https://github.com/Notmeher/Docgen)
